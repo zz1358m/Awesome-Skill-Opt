@@ -30,12 +30,12 @@ def validate(data):
         assert p['category'] in {c[0] for c in CATEGORIES}, p['title']
         assert re.fullmatch(r'20\d{2}-\d{2}(-\d{2})?', p['date']), p['title']
         dt.date.fromisoformat(p['checked_on'])
-        assert bool(p.get('arxiv_id')) != bool(p.get('openreview_id')), f'Exactly one primary source: {p["title"]}'
+        assert p.get('arxiv_id') or p.get('openreview_id'), f'Missing primary source: {p["title"]}'
         if p.get('arxiv_id'):
             assert re.fullmatch(r'\d{4}\.\d{4,5}', p['arxiv_id']), p['title']
             assert p['authors'], f'Missing authors: {p["title"]}'
-        else:
-            assert p['venue'], f'Anonymous submission needs a venue label: {p["title"]}'
+        if p.get('openreview_id'):
+            assert p['venue'], f'OpenReview entry needs a venue label: {p["title"]}'
         key = p['title'].lower()
         assert key not in seen, f'Duplicate title: {p["title"]}'
         seen.add(key)
@@ -65,7 +65,9 @@ def catalog(data, zh=False):
                 resources += f' · [code]({p["code_url"]})'
             elif p['code_status'] == 'not located':
                 resources += ' · 代码未定位' if zh else ' · code not located'
-            if p.get('venue'):
+            if p.get('venue') and p.get('arxiv_id') and p.get('openreview_id'):
+                resources += f' · [{p["venue"]}](https://openreview.net/forum?id={p["openreview_id"]})'
+            elif p.get('venue'):
                 resources += f' · {p["venue"]}'
             work = f'**{p["name"]}** — {p["title"]}' if p['name'] != p['title'] else f'**{p["title"]}**'
             summary = p['summary_zh' if zh else 'summary'].replace('|', '\\|')
