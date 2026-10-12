@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-10-11",
+  "last_checked": "2026-10-12",
   "papers": [
     {
       "name": "SkillOpt",
@@ -54,9 +54,9 @@
       ],
       "summary": "Targets unstable and inefficient skill self-evolution through two principles: direction stability (effective corrections accumulate across iterations) and update adaptivity (the scope of a revision follows the consistency of feedback).",
       "summary_zh": "针对 skill 自进化不稳定、迭代效率低的问题，提出两条原则：方向稳定（有效的修正跨迭代累积）和更新自适应（修改范围随反馈的一致程度变化）。",
-      "code_url": null,
-      "code_status": "not checked",
-      "checked_on": "2026-10-11"
+      "code_url": "https://github.com/ruc-datalab/SkillAdam",
+      "code_status": "author-linked",
+      "checked_on": "2026-10-12"
     },
     {
       "name": "GraphSkillEvo",
@@ -74,9 +74,9 @@
       ],
       "summary": "Represents skills as graph-structured natural-language artifacts to give explicit workflow-level guidance and to constrain the search space, and optimizes them with evolutionary search.",
       "summary_zh": "把 skill 表示成图结构的自然语言工件，提供显式的 workflow 级指导并约束搜索空间，再用进化搜索优化。",
-      "code_url": null,
-      "code_status": "not checked",
-      "checked_on": "2026-10-11"
+      "code_url": "https://github.com/ruisun7/GraphSkillEvo",
+      "code_status": "author-linked",
+      "checked_on": "2026-10-12"
     },
     {
       "name": "MetaSkill-Evolve",
@@ -119,9 +119,9 @@
       ],
       "summary": "Training-free, step-level skill adaptation: for a failed trajectory it locates the first actionable fault step, attributes it to candidate skills, and applies targeted updates under explicit acceptance checks with a frozen backbone.",
       "summary_zh": "免训练的步骤级 skill 适配：在失败轨迹里定位第一个可处理的出错步骤，归因到候选 skill，在显式的接受检查下做针对性修改，backbone 保持冻结。",
-      "code_url": null,
-      "code_status": "not checked",
-      "checked_on": "2026-10-11"
+      "code_url": "https://github.com/zjunlp/SkillAdaptor",
+      "code_status": "author-linked",
+      "checked_on": "2026-10-12"
     },
     {
       "name": "SkillMentor",
@@ -274,9 +274,9 @@
       ],
       "summary": "A skill compiler built around SkIR, a strongly typed intermediate representation that separates skill semantics from framework-specific formatting to address cross-framework portability and security.",
       "summary_zh": "一个 skill 编译器，核心是强类型的中间表示 SkIR，把 skill 的语义和各框架特有的格式分开，处理跨框架可移植性和安全问题。",
-      "code_url": null,
-      "code_status": "not checked",
-      "checked_on": "2026-10-11"
+      "code_url": "https://github.com/Nexa-Language/Skill-Compiler",
+      "code_status": "author-linked",
+      "checked_on": "2026-10-12"
     },
     {
       "name": "SkillAlign",
@@ -436,9 +436,9 @@
       ],
       "summary": "A requirement-driven benchmark that isolates the marginal utility of agent skills in software engineering by pairing 49 public skills with GitHub repositories pinned at fixed commits and execution-based acceptance tests.",
       "summary_zh": "一个由需求驱动的基准，把 49 个公开 skill 和固定 commit 的 GitHub 仓库、基于执行的验收测试配对，用来分离出 agent skill 在软件工程里的边际效用。",
-      "code_url": null,
-      "code_status": "not checked",
-      "checked_on": "2026-10-11"
+      "code_url": "https://github.com/GeniusHTX/SWE-Skills-Bench",
+      "code_status": "author-linked",
+      "checked_on": "2026-10-12"
     },
     {
       "name": "A Framework for Evaluating Agentic Skills at Scale",
@@ -663,6 +663,332 @@
       "code_url": null,
       "code_status": "not checked",
       "checked_on": "2026-10-11"
+    },
+    {
+      "name": "Work2Skill",
+      "title": "Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction",
+      "category": "induction",
+      "date": "2026-10-09",
+      "arxiv_id": "2610.12984",
+      "openreview_id": "yJpMXl0CY4",
+      "venue": "ICLR 2027 submission",
+      "authors": [
+        "Yuqi Huang",
+        "Hui Li",
+        "Yifei Cao",
+        "Zikun Cai",
+        "Tianci Xie",
+        "Yangfan Gao",
+        "Pinxue Guo",
+        "Chaoyun Zhang",
+        "Bingxuan Li",
+        "Rui Zheng",
+        "Hang Yan",
+        "Ning Liao"
+      ],
+      "summary": "Captures human desktop GUI demonstrations with a recorder that aligns screen video, mouse and keyboard events, and accessibility-tree information, releases a dataset of 350 demonstrations, and induces reusable skills (workflow rules, step dependencies, completion checks) with an agent that inspects the evidence on demand.",
+      "summary_zh": "用一个对齐屏幕录像、鼠标键盘事件和 accessibility tree 信息的录制工具采集人在桌面 GUI 上的演示，发布 350 条演示的数据集，并由一个按需查看证据的 agent 归纳出包含 workflow 规则、步骤依赖和完成检查的可复用 skill。",
+      "code_url": "https://github.com/china-qijizhifeng/Work2Skill",
+      "code_status": "author-linked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "SkillDreamer",
+      "title": "Imagine Before Acting: Prospective Skill Identification for LLM Agents",
+      "category": "routing",
+      "date": "2026-08-28",
+      "arxiv_id": "2609.01642",
+      "openreview_id": "zhLjwy8Fig",
+      "venue": "ICLR 2027 submission",
+      "authors": [
+        "Shuo Liu",
+        "Yutong Yang",
+        "Haohao Xiao",
+        "Mouxing Yang",
+        "Xi Peng"
+      ],
+      "summary": "Observes that task descriptions state objectives while skill documents describe capabilities and procedures, a mismatch that causes useful skills to be missed in retrieval or invocation; it first imagines the required capabilities as pseudo skills to guide retrieval, then re-evaluates which skills to invoke as subtasks emerge during execution.",
+      "summary_zh": "指出任务描述写的是目标、skill 文档写的是能力和流程，这种不对齐会让合适的 skill 在检索或调用时被漏掉；做法是先把执行所需的能力想象成 pseudo skill 来引导检索，执行过程中再随新出现的子任务重新判断该调用哪些 skill。",
+      "code_url": null,
+      "code_status": "not checked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "SkillMorph",
+      "title": "Trajectory-Guided Fault Localization for Agent Skill Evolution",
+      "category": "optimization",
+      "date": "2026-10-08",
+      "arxiv_id": "2610.11858",
+      "openreview_id": null,
+      "venue": null,
+      "authors": [
+        "Yu Ge",
+        "Linna Xie",
+        "Zhong Li",
+        "Yu Pei",
+        "Tian Zhang"
+      ],
+      "summary": "Links execution evidence to specific skill content before revising it: contrasts failure and success evidence in abstracted trajectories across repeated runs and tasks to identify suspicious actions, then uses them to localize edit sites in the skill and generate revisions; evaluated on SWE-Skills-Bench and CannBot.",
+      "summary_zh": "先把执行证据对应到具体的 skill 内容再做修改：在多次运行、多个任务的抽象轨迹里对比失败和成功的证据，找出可疑动作，再据此定位 skill 里要改的位置并生成修改；在 SWE-Skills-Bench 和 CannBot 上评测。",
+      "code_url": null,
+      "code_status": "not checked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "SkillContrast",
+      "title": "SkillContrast: Difference-Guided Text Selection for Agent Skill Reranking",
+      "category": "routing",
+      "date": "2026-10-08",
+      "arxiv_id": "2610.11650",
+      "openreview_id": null,
+      "venue": null,
+      "authors": [
+        "Jiandong Ding",
+        "Honglei Ji",
+        "Ming Liu",
+        "Tao Duan"
+      ],
+      "summary": "A training-free text selector for skill reranking that compares the retrieved skills with one another and passes the passages where they differ, with local context, to a pretrained reranker, so that similar skills with different conditions of use stay distinguishable under a short input budget.",
+      "summary_zh": "一个免训练的文本选择器，用于 skill 重排序：把检索到的 skill 互相比较，将它们有差异的段落连同局部上下文交给预训练的 reranker，使写法相近但适用条件不同的 skill 在较短的输入长度下仍能被区分。",
+      "code_url": null,
+      "code_status": "not checked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "One Skill Too Many",
+      "title": "One Skill Too Many: How Co-Installed Skills Conflict in Coding Agents",
+      "category": "evaluation",
+      "date": "2026-10-08",
+      "arxiv_id": "2610.11647",
+      "openreview_id": null,
+      "venue": null,
+      "authors": [
+        "Chaoliang Yan",
+        "Zihao Xu",
+        "Yuekang Li",
+        "Shangzhi Xu",
+        "Yi Liu",
+        "Gelei Deng",
+        "Siqi Ma"
+      ],
+      "summary": "An empirical study of conflicts between co-installed skills that do the same job in coding agents, mined from snapshots of 20,947 repositories and run on 312 confirmed pairs across three models: a similar skill can run in place of the installed one and drop its core functions while the task still passes.",
+      "summary_zh": "对编程 agent 中同时安装、功能相同的 skill 之间的冲突做实证研究：从 20,947 个仓库的快照中挖掘，在三个模型上运行 312 对确认的 skill；相似的 skill 可能顶替已安装的那个并丢掉它的核心功能，而任务仍然通过。",
+      "code_url": null,
+      "code_status": "not checked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "SameCapRisk-Bench",
+      "title": "Right Family, Wrong Skill: Evaluating Risk Exposure in Agent Skill Retrieval",
+      "category": "evaluation",
+      "date": "2026-06-09",
+      "arxiv_id": "2606.10388",
+      "openreview_id": null,
+      "venue": null,
+      "authors": [
+        "Jiandong Ding",
+        "Honglei Ji",
+        "Ming Liu",
+        "Tao Duan"
+      ],
+      "summary": "A skill-retrieval benchmark of 890 units and 1,314 query cases in which each unit pairs a skill that meets a query requirement with a same-capability skill that violates it, scoring retrievers and rerankers on both helpful hits and exposure of the conflicting sibling.",
+      "summary_zh": "一个 skill 检索基准，包含 890 个单元和 1,314 个查询用例；每个单元把满足查询要求的 skill 和一个能力相同但违反该要求的 skill 配成一对，同时考察检索器和 reranker 命中有用 skill 的情况以及把冲突 skill 暴露给 agent 的情况。",
+      "code_url": null,
+      "code_status": "not checked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "An Empirical Study of Agent Skills' Downstream Utility",
+      "title": "An Empirical Study of Agent Skills' Downstream Utility",
+      "category": "evaluation",
+      "date": "2026-10-06",
+      "arxiv_id": "2610.08875",
+      "openreview_id": null,
+      "venue": null,
+      "authors": [
+        "Yu Cheng",
+        "Dehai Zhao",
+        "Zhongxin Liu",
+        "Qing Huang",
+        "Zhenchang Xing",
+        "Xiaoxue Ren"
+      ],
+      "summary": "Defines downstream utility as the pass-rate difference from a no-skill run under the same model–harness configuration and measures it on the 87 SkillsBench tasks across nine configurations, also examining alternative marketplace skills and multi-skill organization; the same skills help some configurations and hurt others on 36.78% of tasks.",
+      "summary_zh": "把下游效用定义为同一模型与 harness 配置下相对无 skill 运行的通过率差值，在 SkillsBench 的 87 个任务、九种配置上测量，并考察 marketplace 里的替代 skill 和多个 skill 的组织方式；在 36.78% 的任务上，同一批 skill 对一些配置有益、对另一些有害。",
+      "code_url": null,
+      "code_status": "not checked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "TeleTune",
+      "title": "TeleTune: Evolving Agent Skills From Offline Telemetry",
+      "category": "optimization",
+      "date": "2026-10-04",
+      "arxiv_id": "2610.05437",
+      "openreview_id": "4Idj4dQE5E",
+      "venue": "ICLR 2027 submission",
+      "authors": [
+        "Justin Chih-Yao Chen",
+        "Elias Stengel-Eskin",
+        "Yan Chen",
+        "Pol Llado",
+        "Scott Counts",
+        "Mohit Bansal",
+        "Benjamin Van Durme",
+        "Harsh Jhamtani",
+        "Gaurav Verma"
+      ],
+      "summary": "Learns a textual skill library from offline usage logs that record no goals, cannot be replayed, and may interleave tasks: action-prediction errors on logged trajectories propose library edits, and an edit is kept only if it improves held-out action-prediction accuracy.",
+      "summary_zh": "从离线使用日志中学习文本形式的 skill 库，这些日志没有记录目标、不能重放、还可能把多个任务混在一起：用日志轨迹上的动作预测误差提出对 skill 库的修改，只保留能提高 held-out 动作预测准确率的修改。",
+      "code_url": null,
+      "code_status": "not checked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "Mining Agent Skills from Production Traces",
+      "title": "Mining Agent Skills from Production Traces",
+      "category": "induction",
+      "date": "2026-10-05",
+      "arxiv_id": "2610.05777",
+      "openreview_id": "PWml1Dhee7",
+      "venue": "ICLR 2027 submission",
+      "authors": [
+        "Yue Ran Kang",
+        "Colton Mikolajczyk",
+        "Chhaya Methani",
+        "Hazel Mak",
+        "Sahil Bhatnagar",
+        "Susheel Suresh",
+        "Alejandro Gutierrez Munoz"
+      ],
+      "summary": "Holding the mining pipeline fixed, compares three levels of mining evidence (successful trajectories only, successes and failures with outcome labels, the same mix with labels withheld) and two skill forms (ordered workflow plan, declarative ontology) on two enterprise benchmarks; which combination helps depends on the domain.",
+      "summary_zh": "在挖掘流程固定的前提下，比较三种挖掘证据（只用成功轨迹、带结果标签的成功与失败轨迹、去掉标签的同一批轨迹）和两种 skill 形式（有序的 workflow 计划、声明式的 ontology），在两个企业场景基准上评测；哪种组合有效取决于领域。",
+      "code_url": null,
+      "code_status": "not checked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "Defense-as-Skill",
+      "title": "Defense-as-Skill: Evolving Runtime Guard Skill for Skill-Augmented Agents",
+      "category": "adjacent",
+      "date": "2026-09-01",
+      "arxiv_id": "2609.01487",
+      "openreview_id": null,
+      "venue": null,
+      "authors": [
+        "Xiaofang Yang",
+        "Ziqi Miao",
+        "Chen Qian",
+        "Dianbo Sui",
+        "Jing Shao",
+        "Lijun Li"
+      ],
+      "summary": "Implements a runtime guard against malicious skills as an installable, editable skill that checks sensitive actions against the user's task boundary, and improves the guard skill with a Monte-Carlo tree search driven by rollout feedback; listed here as a case of evolving a skill toward a safety objective.",
+      "summary_zh": "把防御恶意 skill 的运行时 guard 本身做成一个可安装、可编辑的 skill，按用户任务的边界检查敏感动作，并用由 rollout 反馈驱动的 Monte-Carlo tree search 改进这个 guard skill；收在这里是因为它是以安全为目标进化 skill 的例子。",
+      "code_url": null,
+      "code_status": "not checked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "Skill-V",
+      "title": "Skill-V: Verifiable Self-Evolving Skill Library for Interactive Agents",
+      "category": "optimization",
+      "date": "2026-10-08",
+      "arxiv_id": "2610.11781",
+      "openreview_id": "FANt1TYG1p",
+      "venue": "ICLR 2027 submission",
+      "authors": [
+        "Jie Ma",
+        "Zhipeng Qian",
+        "Yufei Ma",
+        "Zihan Liang",
+        "Jiayi Ji",
+        "Qingpeng Cai",
+        "Ben Chen",
+        "Peng Jiang",
+        "Xiaoshuai Sun"
+      ],
+      "summary": "Represents skills as versioned, falsifiable contracts that tie semantic intent to observable behavioral criteria: task failures trigger skill addition, disagreements between contract evaluations and task outcomes trigger revisions of skill boundaries, and revisions must pass non-regression checks on replayed historical evidence.",
+      "summary_zh": "把 skill 表示成带版本、可证伪的契约，将语义意图和可观察的行为标准对应起来：任务失败触发新增 skill，契约评估和任务结果不一致时触发对 skill 边界的修订，修订必须在重放的历史证据上通过不退化检查。",
+      "code_url": null,
+      "code_status": "not checked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "Skill Misevolution",
+      "title": "Practice Makes Unsafe: Skill Misevolution in Self-Improving LLM Agents",
+      "category": "adjacent",
+      "date": "2026-08-13",
+      "arxiv_id": "2608.12851",
+      "openreview_id": null,
+      "venue": null,
+      "authors": [
+        "Xutao Mao",
+        "Liangjie Zhao",
+        "Xiang Zheng",
+        "Cong Wang"
+      ],
+      "summary": "Shows that skill evolution can keep an unsafe procedure inside an otherwise useful skill so that later benign tasks repeat the harm, builds a gym and a 525-task benchmark that check the writing and retrieval steps separately, and proposes SafeEvolve, which checks a skill both when it is written and when a later task retrieves it.",
+      "summary_zh": "说明 skill 进化可能把不安全的流程留在一个本身有用的 skill 里，让之后的良性任务重复这一危害；构建了能分别检查写入和检索两个环节的 gym 和一个 525 个任务的基准，并提出 SafeEvolve，在 skill 写入时和被后续任务检索时各检查一次。",
+      "code_url": "https://github.com/henrymao2004/misevolve",
+      "code_status": "author-linked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "SkillEvoLean",
+      "title": "SkillEvoLean: Mutation-enhanced skill evolution for Lean provers",
+      "category": "optimization",
+      "date": "2026-10-01",
+      "arxiv_id": "2610.01799",
+      "openreview_id": null,
+      "venue": null,
+      "authors": [
+        "Kuo Zhou",
+        "Zixiong Yang",
+        "Lu Zhang"
+      ],
+      "summary": "Skill self-evolution for Lean theorem provers that jointly evolves a high-level solving policy and its reference knowledge: progressive updates draw on successful and failed trajectories, and when no complete proof can be generated a mutation step samples mathematical concepts to produce and select new skill candidates under verifier feedback.",
+      "summary_zh": "面向 Lean 定理证明器的 skill 自进化，同时进化高层解题策略和它的参考知识：渐进式更新利用成功和失败的轨迹；当生成不出完整证明时，变异步骤通过采样数学概念产生新的 skill 候选，并在 verifier 反馈下选择。",
+      "code_url": null,
+      "code_status": "not checked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "Do Self-Evolving Skills Generalize to Held-Out Tasks?",
+      "title": "Do Self-Evolving Skills Generalize to Held-Out Tasks?",
+      "category": "evaluation",
+      "date": "2026-09-30",
+      "arxiv_id": "2609.39148",
+      "openreview_id": "rM2eQio3e3",
+      "venue": "ICLR 2027 submission",
+      "authors": [
+        "Xihao Piao",
+        "Zifeng Wang",
+        "Zhen Chen"
+      ],
+      "summary": "Tests five self-evolving skill methods and a one-shot skill on six benchmarks with the same model, agent, and train/test split: of the 21 skills that improve on their training tasks, 5 keep all of that improvement on test tasks, 13 keep part, and 3 keep none; also describes GSO, which keeps only a skill-writing guide and writes a new skill for each task.",
+      "summary_zh": "在六个基准上用相同的模型、agent 和训练/测试划分测试五种 skill 自进化方法和一个一次性生成的 skill：在训练任务上有提升的 21 个 skill 中，5 个在测试任务上保住了全部提升，13 个保住一部分，3 个完全没有保住；同时给出 GSO，只保留一份写 skill 的指南，对每个任务新写一个 skill。",
+      "code_url": null,
+      "code_status": "not checked",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "name": "EconSkills",
+      "title": "EconSkills: Studying Skill Transfer and Retrieval for Web Agents on Live Economic Data",
+      "category": "evaluation",
+      "date": "2026-09-17",
+      "arxiv_id": "2609.19523",
+      "openreview_id": null,
+      "venue": null,
+      "authors": [
+        "Yinzhu Quan",
+        "Zefang Liu"
+      ],
+      "summary": "A skill library and evaluation framework that distills verified EconWebArena trajectories into parameterized standard operating procedures, and separates two questions: whether a known relevant procedure transfers to a held-out task, and whether that benefit survives when the agent selects from a 50-skill library.",
+      "summary_zh": "一个 skill 库和评测框架，把经过验证的 EconWebArena 轨迹蒸馏成参数化的标准操作流程，并把两个问题分开考察：已知相关的流程能否迁移到 held-out 任务，以及 agent 从 50 个 skill 的库里自行选择时这一收益能否保住。",
+      "code_url": null,
+      "code_status": "not checked",
+      "checked_on": "2026-10-12"
     }
   ]
 }
