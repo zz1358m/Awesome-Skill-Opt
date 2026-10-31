@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-10-30",
+  "last_checked": "2026-10-31",
   "papers": [
     {
       "name": "SkillOpt",
@@ -146,6 +146,25 @@
       "code_url": null,
       "code_status": "not checked",
       "checked_on": "2026-10-11"
+    },
+    {
+      "name": "Corpus2Skill",
+      "title": "Corpus2Skill: Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG",
+      "category": "induction",
+      "date": "2026-04-16",
+      "arxiv_id": "2604.14572",
+      "openreview_id": null,
+      "venue": "EMNLP 2026 Findings",
+      "authors": [
+        "Yiqun Sun",
+        "Pengfei Wei",
+        "Lawrence B. Hsieh"
+      ],
+      "summary": "Compiles a bounded document corpus offline into a hierarchical skill directory of progressively finer summaries, which an LLM agent navigates at serve time, drilling down to documents and backtracking from unproductive branches, as an alternative to flat retrieval for RAG.",
+      "summary_zh": "离线将有界文档语料编译为由逐级细化摘要构成的层级化 skill 目录，服务时由 LLM agent 自上而下导航至文档并在无效分支回溯，作为 RAG 中扁平检索的替代方案。",
+      "code_url": "https://github.com/dukesun99/Corpus2Skill",
+      "code_status": "author-linked",
+      "checked_on": "2026-10-31"
     },
     {
       "name": "Trace2Skill",

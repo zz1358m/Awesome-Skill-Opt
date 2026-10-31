@@ -4,7 +4,7 @@
 
 A curated collection of work on **optimizing agent skills**: reusable, text-space procedural artifacts (for example `SKILL.md` packages) that are loaded by a frozen LLM agent at inference time. The list follows a skill through its lifecycle: how it is induced from experience, evolved under feedback, moved across models and harnesses, selected and exposed at run time, and evaluated.
 
-**Last literature check: 2026-10-30 · 209 papers.**
+**Last literature check: 2026-10-31 · 210 papers.**
 
 Most entries are recent preprints. Entries labeled *ICLR 2027 submission* are anonymous papers under review, described from their public abstracts only; the label does not indicate acceptance. Contributions are summarized from abstracts and are not independent reproductions. Reported results remain specific to each paper's models, harnesses, and benchmarks.
 
@@ -139,6 +139,7 @@ Most entries are recent preprints. Entries labeled *ICLR 2027 submission* are an
 | 2026-06-25 | **SkillDisCo** — SKILL-DISCO: Distilling and Compiling Agent Traces into Reusable Procedural Skills | Views successful traces in FSM-defined scenarios as paths in an unknown transition graph, distills reusable parameterized control-flow subgraphs from them, and compiles these into callable, executable, and verifiable procedural skills. | [paper](https://arxiv.org/abs/2606.26669) |
 | 2026-06-04 | **OpenSkill** — OpenSkill: Open-World Self-Evolution for LLM Agents | Open-world self-evolution in which an agent builds both skills and its own verification signals from documentation, repositories, and the web, refining the synthesized skills against self-built virtual tasks without target-task supervision. | [paper](https://arxiv.org/abs/2606.06741) |
 | 2026-05-09 | **SkillGen** — SkillGen: Verified Inference-Time Agent Skill Synthesis | A multi-agent framework that synthesizes a single auditable skill from a base agent's trajectories through contrastive induction over successes and failures, then refines it while treating the skill as an intervention whose repairs and regressions are measured on the same instances with and without it. | [paper](https://arxiv.org/abs/2605.10999) |
+| 2026-04-16 | **Corpus2Skill** — Corpus2Skill: Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG | Compiles a bounded document corpus offline into a hierarchical skill directory of progressively finer summaries, which an LLM agent navigates at serve time, drilling down to documents and backtracking from unproductive branches, as an alternative to flat retrieval for RAG. | [paper](https://arxiv.org/abs/2604.14572) · [code](https://github.com/dukesun99/Corpus2Skill) · EMNLP 2026 Findings |
 | 2026-03-26 | **Trace2Skill** — Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills | Consolidates many execution trajectories in parallel into a unified skill directory through inductive reasoning, either deepening human-written skills or building skills from weak LLM-generated drafts. | [paper](https://arxiv.org/abs/2603.25158) |
 
 <a id="transfer"></a>
