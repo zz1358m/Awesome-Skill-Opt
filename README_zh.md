@@ -4,7 +4,7 @@
 
 收集 **agent skill 优化** 的论文与代码。这里的 skill 指文本形式、可复用的过程性工件（例如 `SKILL.md` 包），由权重冻结的 LLM agent 在推理时加载。清单按 skill 的生命周期组织：怎么从经验里归纳、怎么根据反馈进化、怎么跨模型和跨 harness 迁移、运行时怎么选择和呈现、怎么评测。
 
-**最近一次文献检查：2026-10-30 · 209 篇。**
+**最近一次文献检查：2026-10-31 · 210 篇。**
 
 多数条目是近期的 preprint。标注 *ICLR 2027 submission* 的是匿名在审投稿，只依据公开摘要描述，这个标注不表示录用。贡献一栏取自摘要，不是独立复现；各论文报告的结果只对它自己的模型、harness 和基准成立。
 
@@ -139,6 +139,7 @@
 | 2026-06-25 | **SkillDisCo** — SKILL-DISCO: Distilling and Compiling Agent Traces into Reusable Procedural Skills | 在由有限状态机定义的场景中，把成功轨迹看作未知转移图上的路径，从中提炼可复用的参数化控制流子图，并编译成可调用、可执行、可验证的流程性 skill。 | [paper](https://arxiv.org/abs/2606.26669) |
 | 2026-06-04 | **OpenSkill** — OpenSkill: Open-World Self-Evolution for LLM Agents | 开放世界自进化：agent 从文档、代码库和网络中同时构建 skill 和自己的验证信号，并在自建的虚拟任务上打磨合成的 skill，不使用目标任务的监督。 | [paper](https://arxiv.org/abs/2606.06741) |
 | 2026-05-09 | **SkillGen** — SkillGen: Verified Inference-Time Agent Skill Synthesis | 一个多 agent 框架，通过对成功和失败轨迹的对比归纳，从基础 agent 的轨迹中合成单个可审查的 skill，并在迭代打磨时把 skill 视为一种干预，在相同实例上对比有无 skill 来统计其修复与回退。 | [paper](https://arxiv.org/abs/2605.10999) |
+| 2026-04-16 | **Corpus2Skill** — Corpus2Skill: Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG | 离线将有界文档语料编译为由逐级细化摘要构成的层级化 skill 目录，服务时由 LLM agent 自上而下导航至文档并在无效分支回溯，作为 RAG 中扁平检索的替代方案。 | [paper](https://arxiv.org/abs/2604.14572) · [code](https://github.com/dukesun99/Corpus2Skill) · EMNLP 2026 Findings |
 | 2026-03-26 | **Trace2Skill** — Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills | 通过归纳推理，把大量执行轨迹并行地整合成一个统一的 skill 目录；既能加深人写的 skill，也能从较弱的 LLM 草稿出发构建 skill。 | [paper](https://arxiv.org/abs/2603.25158) |
 
 <a id="transfer"></a>
